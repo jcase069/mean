@@ -1,0 +1,22 @@
+{
+  "name": "mean",
+  "version": "0.0.3",
+  "description": "Just a mean site",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcase069/mean.git"
+  },
+  "author": "Dan Hedges",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcase069/mean/issues"
+  },
+  "homepage": "https://github.com/jcase069/mean",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
