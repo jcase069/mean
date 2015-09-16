@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/jcase069/mean",
   "dependencies": {
-    "express": "^4.13.3"
+    "body-parser": "^1.13.3",
+    "compression": "^1.5.2",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "method-override": "^2.3.5",
+    "morgan": "^1.6.1"
   }
 }
