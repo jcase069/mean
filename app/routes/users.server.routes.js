@@ -19,8 +19,17 @@ module.exports = function(app) {
   app.get('/oauth/facebook', passport.authenticate('facebook', {
     failureRedirect: '/signin'
   }));
-  
+
   app.get('/oauth/facebook/callback', passport.authenticate('facebook', {
+    failureRedirect: '/signin',
+    successRedirect: '/'
+  }));
+
+  app.get('/oauth/twitter', passport.authenticate('twitter', {
+    failureRedirect: '/signin'
+  }));
+
+  app.get('/oauth/twitter/callback', passport.authenticate('twitter', {
     failureRedirect: '/signin',
     successRedirect: '/'
   }));
