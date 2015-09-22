@@ -1,5 +1,6 @@
 var facebookSecret = require('../secret/facebook.secret').facebook,
-  twitterSecret = require('../secret/twitter.secret').twitter;
+  twitterSecret = require('../secret/twitter.secret').twitter,
+  googleSecret = require('../secret/google.secret').google;
 
 module.exports = {
   // Development configuration options
@@ -14,5 +15,10 @@ module.exports = {
     clientID: twitterSecret.consumerKey,
     clientSecret: twitterSecret.consumerSecret,
     callbackURL: 'http://localhost:3000/oauth/twitter/callback'
+  },
+  google: {
+    clientID: googleSecret.clientId,
+    clientSecret: googleSecret.clientSecret,
+    callbackURL: 'http://localhost:3000/oauth/google/callback'
   }
 };
